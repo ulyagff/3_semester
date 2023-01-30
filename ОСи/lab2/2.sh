@@ -1,0 +1,1 @@
+ps -e --format="pid cmd" | awk '{if ($2 ~ /sbin/) print $1 > "out2.log"}'
